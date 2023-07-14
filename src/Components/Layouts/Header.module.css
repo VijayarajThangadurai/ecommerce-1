@@ -1,0 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat&family=Playfair+Display:ital@1&family=Poppins&family=Roboto+Condensed:ital@1&display=swap');
+
+.brand {
+    font-size: 30px !important;
+    color: rgb(183, 213, 240) !important;
+    font-family: 'Lobster', cursive;
+}
