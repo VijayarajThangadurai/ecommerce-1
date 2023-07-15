@@ -3,7 +3,7 @@ import { Card, Container, Row, Button, Col } from "react-bootstrap";
 import classes from "./store.module.css";
 
 
-import CartContext from "./Store/cart-context";
+import CartContext from "../StoreContext/cart-context";
 
 const productsArr = [
     {

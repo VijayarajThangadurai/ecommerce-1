@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import Cart from "./Components/Cart/Cart";
-import Store from "./Components/store";
+import Store from "./Components/Store/store";
 // import { Button } from "react-bootstrap";
 // import Header from "./Components/Layouts/Header";
 import classes from "./App.module.css";
-import CartProvider from "./Components/Store/CartProvider";
+import CartProvider from "./Components/StoreContext/CartProvider";
 import About from "./Components/About/About";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter,parsePath, RouterProvider } from "react-router-dom";
 import RootLayout from "./Components/Layouts/Root";
 
 function App() {
