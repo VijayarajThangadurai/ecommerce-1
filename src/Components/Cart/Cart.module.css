@@ -11,3 +11,18 @@
     color: white;
     padding: 0.25rem;
 }
+
+
+    .cartlist {
+        height: 75vh;
+        overflow: auto;
+    }
+    
+    .cartempty {
+        height: 75vh;
+        width: 300px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        margin-left: 30%;
+    }

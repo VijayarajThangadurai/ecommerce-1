@@ -22,8 +22,10 @@ const Cart = (props) => {
     <Modal>
        <div className={classes.header}>
         <h3>Cart Items</h3>
-        {!showCartItem && <h6>Your Cart is Empty!</h6>}
-        {showCartItem && <CartItems />}
+        {!showCartItem && <div className={classes.cartempty}>Your Cart is Empty!</div>}
+        {showCartItem &&  <div className={classes.cartlist}>
+        <CartItems /> </div>
+        }
       </div>
     </Modal>
   );

@@ -44,7 +44,7 @@ const CartItems = (props) => {
         console.log(event.target.id);
     }
   return (
-    <ul className={classes.cartItems}>
+    <ul className={classes.itemcart}>
     
       <div className={classes.heading}>
         <span>ITEM</span>
