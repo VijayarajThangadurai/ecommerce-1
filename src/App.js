@@ -8,6 +8,8 @@ import CartProvider from "./Components/StoreContext/CartProvider";
 import About from "./Components/About/About";
 import { createBrowserRouter,parsePath, RouterProvider } from "react-router-dom";
 import RootLayout from "./Components/Layouts/Root";
+import Home from './Components/Home/Home';
+import ContactUs from "./Components/Contact/ContactUs";
 
 function App() {
  // const [storeVisible, setStoreVisible] = useState(false);
@@ -31,8 +33,10 @@ function App() {
       path: "/",
       element: <RootLayout cartHandler = {visibleCartHandler}/>,
       children: [
+        {path:"/", element: <Home/>},
         {path:"/store", element: <Store/>},
         {path:"/about", element: <About/>},
+        {path:"/contactus", element: <ContactUs/>},
       ],
     },
   ]);

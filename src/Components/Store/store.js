@@ -59,7 +59,7 @@ const Store = () => {
     <Row xs={1} md={2} className="g-8">
       {productsArr.map((item, idx) => (
         <Col key={idx}>
-           <Card id={idx} style={{ width: "20rem" }} className="mt-3">
+           <Card id={idx} style={{ width: "20rem", backgroundColor: "#e4f2f2" }} className="mt-3">
             <Card.Title
               style={{ textAlign: "center", paddingTop: "0.5rem" }}
             >

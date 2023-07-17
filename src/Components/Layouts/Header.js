@@ -47,6 +47,8 @@ const location = useLocation();
             <Nav.Link as={Link} to="/">Home</Nav.Link>
             <Nav.Link as={Link} to="/store">Store</Nav.Link>
             <Nav.Link as={Link} to="/about">About</Nav.Link>
+            <Nav.Link as={Link} to="/contactus">ContactUs</Nav.Link>
+
           </Nav>
          {isStoreVisible && (<Button variant="outline-warning" onClick={cartClickHandler}>
           Cart {cartCount}
