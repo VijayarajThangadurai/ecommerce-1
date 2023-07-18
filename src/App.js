@@ -6,10 +6,36 @@ import Store from "./Components/Store/store";
 import classes from "./App.module.css";
 import CartProvider from "./Components/StoreContext/CartProvider";
 import About from "./Components/About/About";
-import { createBrowserRouter,parsePath, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import RootLayout from "./Components/Layouts/Root";
 import Home from './Components/Home/Home';
 import ContactUs from "./Components/Contact/ContactUs";
+import Product from "./Components/Store/Product";
+const ProductsArrs =[
+  {
+    title: "Colors",
+    price: 100,
+    imageUrl: "https://prasadyash2411.github.io/ecom-website/img/Album%201.png",
+  },
+
+  {
+    title: "Black and white Colors",
+    price: 50,
+    imageUrl: "https://prasadyash2411.github.io/ecom-website/img/Album%202.png",
+  },
+
+  {
+    title: "Yellow and Black Colors",
+    price: 70,
+    imageUrl: "https://prasadyash2411.github.io/ecom-website/img/Album%203.png",
+  },
+
+  {
+    title: "Blue Color",
+    price: 100,
+    imageUrl: "https://prasadyash2411.github.io/ecom-website/img/Album%204.png",
+  },
+];
 
 function App() {
  // const [storeVisible, setStoreVisible] = useState(false);
@@ -34,9 +60,13 @@ function App() {
       element: <RootLayout cartHandler = {visibleCartHandler}/>,
       children: [
         {path:"/", element: <Home/>},
-        {path:"/store", element: <Store/>},
+        {path:"/store", element: <Store ProductsArr={ProductsArrs}/>},
         {path:"/about", element: <About/>},
         {path:"/contactus", element: <ContactUs/>},
+        {
+          path:'/store/:productId',
+          element: <Product productsArr ={ProductsArrs}/>,
+        }
       ],
     },
   ]);

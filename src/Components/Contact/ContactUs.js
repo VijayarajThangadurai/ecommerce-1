@@ -26,6 +26,7 @@ try{
     }
     return (
         <div className={classes.form}>
+            <h2>Contact Us</h2>
             <form onSubmit={submitHandler}>
              <div className={classes.name}>
             <label>Name:</label>
