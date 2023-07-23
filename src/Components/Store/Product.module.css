@@ -5,7 +5,7 @@
     align-items: center;
     text-align: center;
 }
-section {
+.sectop {
     border: 1px solid rgb(236, 154, 154);
     background-color: aliceblue;
     border-radius: 8px;

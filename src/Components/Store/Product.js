@@ -10,7 +10,7 @@ const Product = (props) =>{
   return (
     <div className={classes.sec}>
         <h1>Product Details</h1>
-        <section>
+        <section className={classes.sectop}>
             <h3>{param.productId}</h3>
             <div className={classes.image}>
                 {prod.imageUrl.map((i)=>(

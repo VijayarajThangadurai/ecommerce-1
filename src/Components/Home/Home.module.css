@@ -43,14 +43,14 @@
 
 }
 
-.lowerSec {
+.lowerSection {
     margin: 1% 20%;
     text-align: center;
 
 
 }
 
-.lowerSec div {
+.lowerSection div {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -75,7 +75,7 @@
     color: #777;
 }
 
-.lowerSec button {
+.lowerSection button {
     width: 20%;
     background: #56CCF2;
     color: white;

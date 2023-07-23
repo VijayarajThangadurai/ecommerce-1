@@ -4,4 +4,8 @@
     font-size: 30px !important;
     color: rgb(183, 213, 240) !important;
     font-family: 'Lobster', cursive;
+    height: auto;
+}
+.cartbtn {
+    margin: 10px;
 }

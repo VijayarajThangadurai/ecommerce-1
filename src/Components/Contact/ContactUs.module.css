@@ -1,4 +1,4 @@
-.form {
+/* .form {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -6,16 +6,36 @@
     border-radius: 10px;
     margin: 25%;
     margin-top: 0;
-}
+} */
 .form form {
-    padding: 5%;
+    padding: 3%;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     text-align: center;
-    padding: 10px;
-    margin-right: 40%;
+    /* padding: 10px;
+    margin-right: 40%; */
+    margin-right: 0;
+    justify-content: center;
+    margin-right: 35%;
+    border: 2px solid rgb(173, 172, 172);
+    margin-left: 38%;
+    margin-top: 3%;
+    border-radius: 14px;
+    padding-left: -5%;
+    background-color: bisque;
+
 }
+.form label{
+    display: flex;
+    margin: 5px;
+}
+.form h2 {
+    text-align: center;
+    margin-right: 23%;
+    margin-bottom: 20px;
+}
+
 /* 
 .form .name {
     display: flex;
@@ -37,11 +57,14 @@
 .form input {
     margin-left: 10px;
     width: auto;
+    margin: 5px;
 }
 
-button {
+.form button {
     background-color: aqua;
-    border-radius: 10px;
+    border-radius: 6px;
     align-items: center;
- margin-right: 13%;
+ margin-right: 40%;
+ padding: 5px;
+ margin-top: 10px;
 }
