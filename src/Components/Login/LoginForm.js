@@ -29,10 +29,10 @@ const LoginForm = (props) => {
     let url;
     if (isLogin) {
       url =
-        "https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyAgCJqt8e9uIi0y4PYnAcCbdGIidzNmskw";
+        "https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyDZeolI0OEBSnn8dWgmkeoie7z-AAeZF4I";
     } else {
       url =
-        "https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyAgCJqt8e9uIi0y4PYnAcCbdGIidzNmskw";
+        "https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyDZeolI0OEBSnn8dWgmkeoie7z-AAeZF4I";
     }
 
     try {
