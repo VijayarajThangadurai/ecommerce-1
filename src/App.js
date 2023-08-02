@@ -5,7 +5,7 @@ import Store from "./Components/Store/store";
 import classes from "./App.module.css";
 import CartProvider from "./Components/StoreContext/CartProvider";
 import About from "./Components/About/About";
-import { createBrowserRouter, Routes, Route } from "react-router-dom";
+import { createBrowserRouter,useNavigate,Navigate, Routes, Route } from "react-router-dom";
 import RootLayout from "./Components/Layouts/Root";
 import Home from './Components/Home/Home';
 import ContactUs from "./Components/Contact/ContactUs";
@@ -50,7 +50,7 @@ function App() {
  // const [storeVisible, setStoreVisible] = useState(false);
   const [cartVisible, setCartVisible] = useState(false);
   const authCtx = useContext(AuthContext);
-
+const navigate= useNavigate();
   // const visibleStoreHandler = () => {
   //   setStoreVisible(true);
   // };
@@ -91,7 +91,7 @@ function App() {
       <Routes>
           <Route path="/" element={<RootLayout cartHandler={visibleCartHandler} />}>
             <Route index element={<Home />} />
-            <Route path="store" element={<Store productsArr={productsArrs} />} />
+            <Route path="store" element={authCtx.isLoggedIn ? <Store productsArr={productsArrs} />: <Navigate to ='/login' />} />
             <Route path="about" element={<About />} />
             <Route path="contactus" element={<ContactUs />} />
             <Route path="login" element={<Login />} />

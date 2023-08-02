@@ -51,7 +51,7 @@ const LoginForm = (props) => {
       //   console.log(data);
       setIsLoading(false);
       if (res.ok) {
-        authCtx.login(data.idToken);
+        authCtx.login(data.idToken, data.email);
         history("/store", { replace: true });
       } else {
         if (data && data.error) {
@@ -101,7 +101,7 @@ const LoginForm = (props) => {
       {authCtx.isLoggedIn && (
         <div style={{ color: "white" }}>
           <h2>Hello!</h2>
-          <p>Already Logged In</p>
+          <p>{authCtx.userEmail}</p>
         </div>
       )}
     </section>
