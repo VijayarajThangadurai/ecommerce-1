@@ -28,7 +28,7 @@ try{
         <div className={classes.form}>
           
             <form onSubmit={submitHandler}>
-            <h2>Contact Us</h2>
+            <h1>Contact Us</h1>
              <div className={classes.name}>
             <label>Name:</label>
             <input type = 'text' id= 'name'/>

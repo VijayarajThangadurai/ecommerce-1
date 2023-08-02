@@ -5,7 +5,7 @@ const Product = (props) =>{
   const param = useParams();
   const proTitle = param.productId;
   const prod = props.productsArr.find((element) => element.title  === proTitle);
-  console.log(prod);
+  //console.log(prod);
 
   return (
     <div className={classes.sec}>

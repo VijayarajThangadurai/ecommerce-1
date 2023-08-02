@@ -3,6 +3,7 @@ import { useContext } from "react";
 
 import classes from "./CartItems.module.css";
 import CartContext from "../StoreContext/cart-context";
+import { Button } from "react-bootstrap";
 
 const cartElements = [
   {
@@ -42,7 +43,10 @@ const CartItems = (props) => {
   
     const changeQuantityhandler = (event) => {
         console.log(event.target.id);
-    }
+    };
+    const clickPurchaseHandler=()=>{
+      alert('Thanks for purchase.')
+    };
   return (
     <ul className={classes.itemcart}>
     
@@ -67,6 +71,9 @@ const CartItems = (props) => {
        <div className={classes.footer}>
         <h5>Total</h5>
         <span>${total}</span>
+      </div>
+      <div>
+        <Button varient="success" onClick={clickPurchaseHandler}>purchase</Button>
       </div>
     </ul>
   );

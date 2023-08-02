@@ -7,6 +7,9 @@
     margin: 25%;
     margin-top: 0;
 } */
+.form{
+    margin-bottom: 15rem;
+}
 .form form {
     padding: 3%;
     display: flex;
@@ -30,10 +33,12 @@
     display: flex;
     margin: 5px;
 }
-.form h2 {
+.form h1 {
+    margin-top: -2rem;
     text-align: center;
-    margin-right: 23%;
+    margin-right: 15%;
     margin-bottom: 20px;
+    font-weight: bold;
 }
 
 /* 

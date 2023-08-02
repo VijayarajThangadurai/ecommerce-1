@@ -12,7 +12,8 @@ import ContactUs from "./Components/Contact/ContactUs";
 import Product from "./Components/Store/Product";
 import Login from "./Components/Login/Login";
 import AuthContext from "./Components/StoreContext/auth-context";
-import Header from "./Components/Layouts/Header";
+// import Header from "./Components/Layouts/Header";
+// import Footer from "./Components/Layouts/Footer";
 const productsArrs =[
   {
     title: "Colors",
@@ -91,7 +92,7 @@ const navigate= useNavigate();
       <Routes>
           <Route path="/" element={<RootLayout cartHandler={visibleCartHandler} />}>
             <Route index element={<Home />} />
-            <Route path="store" element={authCtx.isLoggedIn ? <Store productsArr={productsArrs} />: <Navigate to ='/login' />} />
+            <Route path="store" element={authCtx.isLoggedIn ? (<Store productsArr={productsArrs} />): (<Navigate to ='/login' />)} />
             <Route path="about" element={<About />} />
             <Route path="contactus" element={<ContactUs />} />
             <Route path="login" element={<Login />} />
