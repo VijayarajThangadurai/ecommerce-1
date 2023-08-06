@@ -12,7 +12,7 @@ const CartProvider = (props) => {
      const onLoginRestore = async () =>{
         try{
             const email = authCtx.userEmail.replace(/[@.]/g,"");
-            const res = await axios.get(`https://crudcrud.com/api/13a4e96961ab4e7bb6406704c7ff6b2a/cart${email}`);
+            const res = await axios.get(`https://crudcrud.com/api/620b91466efe48efa2bbd3623a5fa960/cart${email}`);
             const resData = await res.data;
             let arr=[];
             resData.array.forEach((element) => {
@@ -43,7 +43,7 @@ const CartProvider = (props) => {
         let backendId;
         try{
             const email = authCtx.userEmail.replace(/[@.]/g, "");
-            const res = await axios.get(`https://crudcrud.com/api/13a4e96961ab4e7bb6406704c7ff6b2a/cart${email}`)
+            const res = await axios.get(`https://crudcrud.com/api/620b91466efe48efa2bbd3623a5fa960/cart${email}`)
           const resData = await res.data;
           resData.forEach((element)=>{
             element.cartItems.forEach(cartItem=>{
@@ -59,7 +59,7 @@ const CartProvider = (props) => {
         updateItemsArr(copyArr);
         try{
             const email = authCtx.userEmail.replace(/[@.]/g, "");
-            const res = await axios.delete(`https://crudcrud.com/api/13a4e96961ab4e7bb6406704c7ff6b2a/cart${email}/${backendId}`);
+            const res = await axios.delete(`https://crudcrud.com/api/620b91466efe48efa2bbd3623a5fa960/cart${email}/${backendId}`);
           } catch(error) {
             console.log('Delete Error');
           }
@@ -70,7 +70,7 @@ const CartProvider = (props) => {
           let backendId;
         try{
           const email = authCtx.userEmail.replace(/[@.]/g, "");
-          const res = await axios.get(`https://crudcrud.com/api/13a4e96961ab4e7bb6406704c7ff6b2a/cart${email}`);
+          const res = await axios.get(`https://crudcrud.com/api/620b91466efe48efa2bbd3623a5fa960/cart${email}`);
           const resData = await res.data;
           resData.forEach((element) => { 
             element.cartItems.forEach(cartItem => {
@@ -92,7 +92,7 @@ const CartProvider = (props) => {
         try {
           const email = authCtx.userEmail.replace(/[@.]/g, "");
           const res = await axios.put(
-            `https://crudcrud.com/api/13a4e96961ab4e7bb6406704c7ff6b2a/cart${email}/${backendId}`,
+            `https://crudcrud.com/api/620b91466efe48efa2bbd3623a5fa960/cart${email}/${backendId}`,
             {
               cartItems: [copyArr[index]],
             }
@@ -107,7 +107,7 @@ const CartProvider = (props) => {
         try {
           const email = authCtx.userEmail.replace(/[@.]/g, "");
           const res = await axios.post(
-            `https://crudcrud.com/api/13a4e96961ab4e7bb6406704c7ff6b2a/cart${email}`,
+            `https://crudcrud.com/api/620b91466efe48efa2bbd3623a5fa960/cart${email}`,
             {
               cartItems: [item],
             }
